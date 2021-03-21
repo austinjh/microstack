@@ -1,0 +1,17 @@
+# get portal password. Username Admin
+sudo snap get microstack config.credentials.keystone-password
+
+# Various operational commands
+# Check version
+snap list microstack
+
+# Others
+microstack.openstack keypair list
+microstack.openstack image list
+microstack.openstack flavor list
+microstack launch cirros -n test
+
+# Note:
+# The launch command can be replaced with the traditional - 
+microstack.openstack server create
+
